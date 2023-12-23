@@ -14,3 +14,8 @@ test("somar string + 100 deve retornar erro", () => {
   const resultado = somar("string", 100);
   expect(resultado).toBe("Error");
 });
+
+test("somar string + string deve retornar erro", () => {
+  const resultado = somar("1", "2");
+  expect(resultado).toBe("Error");
+});
