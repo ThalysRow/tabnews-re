@@ -1,6 +1,7 @@
-import database from "../../../../infra/database.js";
+import database from "infra/database.js";
 
-function status(request, response) {
+async function status(request, response) {
+  const result = await database.query("");
   response.status(200).send("Tudo ok!");
 }
 
